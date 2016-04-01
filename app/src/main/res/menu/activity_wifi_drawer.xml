@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dev_info"
+            android:icon="@drawable/ic_menu_refresh"
+            android:title="设备信息" />
+        <item
+            android:id="@+id/nav_dev_param"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="设备参数" />
+        <item
+            android:id="@+id/nav_dev_op"
+            android:icon="@drawable/ic_menu_send"
+            android:title="设备操作" />
+        <item
+            android:id="@+id/nav_dev_upgrade"
+            android:icon="@drawable/ic_menu_share"
+            android:title="设备升级" />
+    </group>
+
+<!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+
+</menu>

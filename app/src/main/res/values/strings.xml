@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">绿锌配置</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="mainscreen_content">V0.1</string>
+    <string name="btnInternet">联网模式</string>
+    <string name="btnLocal">WIFI模式</string>
+    <string name="mainscreen_header">绿锌WIFI配置工具</string>
+    <string name="mainscreen_manufacturer">2016</string>
+    <string name="title_activity_online">联网模式</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_wifi">Wifi模式</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="strOnlineHeaderFirmware">嵌入式软件列表</string>
+    <string name="strOnlineHeaderParam">嵌入式参数文件列表</string>
+    <string name="strOnlineHeaderHelp">帮助</string>
+    <string name="title_activity_offline">OfflineActivity</string>
+    <string name="txtOfflineHeader">没有因特网连接，请重新搜索网络，确认后刷新</string>
+    <string name="title_activity_fimware">软件firmware</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="title_activity_help">说明</string>
+    <string name="txtHelp">
+        "此软件用于Lvxin WIFI模块的在线参数修改和软件升级\n\n"
+        "由Boxshell提供"
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">软件为空</string>
+    <string name="wifi_user">绿锌用户</string>
+    <string name="wifi_home_fragment">访问WIFI设备</string>
+    <string name="wifi_pick_dev">搜索到的设备</string>
+    <string name="wifi_operate_fragment_title">操作</string>
+    <string name="wifi_start_mode">工作模式(AP/STA)</string>
+    <string name="wifi_start_ap">AP</string>
+    <string name="wifi_start_sta">STA</string>
+    <string name="wifi_operate_cat_public">设备操作</string>
+    <string name="wifi_operate_reset_btn">重启设备</string>
+    <string name="wifi_operate_reset_btn_sum">设备重新启动，未保存的参数会丢失</string>
+    <string name="wifi_operate_savereset_btn">保存重启</string>
+    <string name="wifi_operate_savereset_btn_sum">保存参数，设备重新启动</string>
+    <string name="wifi_param_cat_public">公共参数设置</string>
+    <string name="wifi_param_cat_ap">AP参数设置</string>
+    <string name="wifi_param_apssid">爱小资01</string>
+    <string name="wifi_param_apssid_title">AP SSID</string>
+    <string name="wifi_param_cat_sta">STA参数设置</string>
+    <string name="wifi_param_stassid">MERCURY_C5AC</string>
+    <string name="wifi_param_stassid_title">STA SSID</string>
+    <string name="wifi_param_doordur_title">开门信号持续时间(秒)</string>
+    <string name="wifi_param_srcid">0123456789ABCDEF</string>
+    <string name="wifi_param_srcid_title">设备id号(请用西文字符)</string>
+    <string name="wifi_param_ap_security">安全类型</string>
+    <string name="wifi_param_ap_security_key">open5678</string>
+    <string name="wifi_param_ap_security_key_title">AP安全密钥</string>
+    <string name="wifi_param_ap_ip">192.168.0.1</string>
+    <string name="wifi_param_ap_ip_title">IP地址</string>
+    <string name="wifi_param_ap_netmask">255.255.255.0</string>
+    <string name="wifi_param_ap_netmask_title">子网掩码</string>
+    <string name="wifi_param_sta_security">安全类型</string>
+    <string name="wifi_param_sta_security_key">12345678</string>
+    <string name="wifi_param_sta_security_key_title">STA安全密钥</string>
+    <string name="action_clear">清除本地文件</string>
+</resources>

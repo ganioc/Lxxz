@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".online.OfflineFragment"
+    android:background="#e9e9e9">
+    <!--tools:showIn="@layout/activity_online"
+    android:background="#b2b2b2"
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtOfflineHeader"
+        android:id="@+id/txtOfflineHeader"
+        android:paddingLeft="80sp"
+        android:paddingRight="80sp"
+        android:paddingBottom="180sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:textColor="#c2c2c2" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnFabRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/stat_notify_sync_noanim" />
+
+
+</FrameLayout>

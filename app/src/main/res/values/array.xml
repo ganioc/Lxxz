@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="wifi_param_doordur">
+        <item>0.5秒</item>
+        <item>1秒</item>
+        <item>1.5秒</item>
+        <item>2秒</item>
+        <item>2.5秒</item>
+        <item>3秒</item>
+        <item>3.5秒</item>
+        <item>4秒</item>
+        <item>4.5秒</item>
+        <item>5秒</item>
+    </string-array>
+    <string-array name="wifi_param_doordur_value">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="wifi_param_ap_security">
+        <item>SECURITY_TYPE_AUTO</item>
+
+    </string-array>
+    <string-array name="wifi_param_ap_security_value">
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_param_sta_security">
+        <item>SECURITY_TYPE_AUTO</item>
+
+    </string-array>
+    <string-array name="wifi_param_sta_security_value">
+        <item>0</item>
+    </string-array>
+
+
+
+</resources>

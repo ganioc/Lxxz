@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory android:title="@string/wifi_operate_cat_public">
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="wifi_operate_mode"
+            android:summary="@string/wifi_start_ap"
+            android:title="@string/wifi_start_mode" />
+        <Preference
+            android:key="resetButton"
+            android:summary="@string/wifi_operate_reset_btn_sum"
+            android:title="@string/wifi_operate_reset_btn"
+
+            ></Preference>
+        <Preference
+            android:key="saveResetButton"
+            android:summary="@string/wifi_operate_savereset_btn_sum"
+            android:title="@string/wifi_operate_savereset_btn"
+
+            >
+
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory android:title="@string/wifi_param_cat_public">
+        <ListPreference
+
+            android:defaultValue="1000"
+            android:entries="@array/wifi_param_doordur"
+            android:entryValues="@array/wifi_param_doordur_value"
+            android:key="wifi_param_doordur"
+            android:summary=""
+            android:title="@string/wifi_param_doordur_title">
+
+        </ListPreference>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_srcid"
+            android:inputType="textCapWords"
+            android:key="wifi_param_srcid"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_srcid_title"
+            android:summary=""/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/wifi_param_cat_ap">
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_apssid"
+            android:inputType="textCapWords"
+            android:key="wifi_param_apssid"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_apssid_title"
+            android:summary="">
+
+        </EditTextPreference>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_ap_ip"
+            android:inputType="textCapWords"
+            android:key="wifi_param_ap_ip"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_ap_ip_title"
+            android:summary="">
+
+        </EditTextPreference>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_ap_netmask"
+            android:inputType="textCapWords"
+            android:key="wifi_param_ap_netmask"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_ap_netmask_title"
+            android:summary="">
+
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="AP安全设置">
+
+        <ListPreference android:defaultValue="0"
+            android:entries="@array/wifi_param_ap_security"
+            android:entryValues="@array/wifi_param_ap_security_value"
+            android:key="wifi_param_ap_security"
+            android:summary=""
+            android:title="@string/wifi_param_ap_security"/>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_ap_security_key"
+            android:inputType="textCapWords"
+            android:key="wifi_param_ap_security_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_ap_security_key_title"
+            android:summary=""/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/wifi_param_cat_sta">
+        <EditTextPreference android:capitalize="none"
+            android:defaultValue="@string/wifi_param_stassid"
+            android:inputType="textCapWords"
+            android:key="wifi_param_stassid"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_stassid_title"
+            android:summary="">
+
+        </EditTextPreference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="STA安全设置">
+
+
+        <ListPreference android:defaultValue="0"
+            android:entries="@array/wifi_param_sta_security"
+            android:entryValues="@array/wifi_param_sta_security_value"
+            android:key="wifi_param_sta_security"
+            android:summary=""
+            android:title="@string/wifi_param_sta_security"/>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_sta_security_key"
+            android:inputType="textCapWords"
+            android:key="wifi_param_sta_security_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_sta_security_key_title"
+            android:summary=""/>
+
+        </PreferenceCategory>
+</PreferenceScreen>
