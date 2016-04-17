@@ -91,13 +91,13 @@ public class Config {
         try{
             JSONObject obj = new JSONObject();
             obj.put("CMD", "WR");
-            obj.put("TARGET", name.toUpperCase());
+            obj.put("TARGET", name.toUpperCase().trim());
             if(subtarget==null || subtarget.length()<1){
                 ;
             }else{
-                obj.put("SUBTARGET", subtarget);
+                obj.put("SUBTARGET", subtarget.toUpperCase().trim());
             }
-            obj.put("CONTENT", content.toUpperCase());
+            obj.put("CONTENT", content.trim());
             return obj.toString();
 
         } catch (JSONException e) {

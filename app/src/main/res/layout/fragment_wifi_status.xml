@@ -108,7 +108,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="运行状态:"
+            android:text="设备角色:"
             android:gravity="right"
 
             />

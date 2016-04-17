@@ -26,7 +26,8 @@
     <string name="title_activity_help">说明</string>
     <string name="txtHelp">
         "此软件用于Lvxin WIFI模块的在线参数修改和软件升级\n\n"
-        "由Boxshell提供"
+        "2016-4-14 v8 1.1 增加开门code的修改；修改value内容大写的bug;\n\n"
+        "Boxshell\n"
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -53,6 +54,8 @@
     <string name="wifi_param_doordur_title">开门信号持续时间(秒)</string>
     <string name="wifi_param_srcid">0123456789ABCDEF</string>
     <string name="wifi_param_srcid_title">设备id号(请用西文字符)</string>
+    <string name="wifi_param_doorcode">123456</string>
+    <string name="wifi_param_doorcode_title">开门密钥(code)</string>
     <string name="wifi_param_ap_security">安全类型</string>
     <string name="wifi_param_ap_security_key">open5678</string>
     <string name="wifi_param_ap_security_key_title">AP安全密钥</string>

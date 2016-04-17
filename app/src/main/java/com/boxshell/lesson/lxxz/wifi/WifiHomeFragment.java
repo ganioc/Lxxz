@@ -149,8 +149,8 @@ public class WifiHomeFragment extends Fragment {
 
                                         JSONObject devObj = (JSONObject) aObj.get(0);
 
-                                        Log.d(Config.TAG, devObj.getString("srcid"));
-                                        Log.d(Config.TAG, devObj.getString("ip"));
+                                        Log.d(Config.TAG, "srcid is:" + devObj.getString("srcid"));
+                                        Log.d(Config.TAG, "ip is:" + devObj.getString("ip"));
 
                                         // display the dialog
                                         mListener.showDevDialog(s);

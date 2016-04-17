@@ -93,18 +93,18 @@ public class WifiParamFragment extends PreferenceFragmentCompat {
         lstDoorDur.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object o) {
-                ListPreference listPreference = (ListPreference)preference;
+                ListPreference listPreference = (ListPreference) preference;
                 ((ListPreference) preference).setValue(o.toString());
                 listPreference.setSummary(listPreference.getEntry());
 
                 new FetchTcpPacketTask(new JsonListener() {
                     @Override
                     public void callback(String s) {
-                        if(s == null){
+                        if (s == null) {
                             Log.d(Config.TAG, "update doordur failed");
                         }
                     }
-                }).execute(Config.strPacketSet("STATE","DOORDUR", lstDoorDur.getValue()));
+                }).execute(Config.strPacketSet("STATE", "DOORDUR", lstDoorDur.getValue()));
 
                 return true;
             }
@@ -127,6 +127,28 @@ public class WifiParamFragment extends PreferenceFragmentCompat {
                         }
                     }
                 }).execute(Config.strPacketSet("STATE", "SRCID", srcidPref.getText()));
+
+                return true;
+            }
+        });
+
+        // doorcode
+        final EditTextPreference doorcodePref = (EditTextPreference) getPreferenceManager().findPreference("wifi_param_doorcode");
+        doorcodePref.setSummary(doorcodePref.getText());
+        doorcodePref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object o) {
+                ((EditTextPreference)doorcodePref).setText(o.toString());
+                preference.setSummary(o.toString());
+
+                new FetchTcpPacketTask(new JsonListener() {
+                    @Override
+                    public void callback(String s) {
+                        if(s == null){
+                            Log.d(Config.TAG, "update doorcode failed");
+                        }
+                    }
+                }).execute(Config.strPacketSet("STATE", "DOORCODE", doorcodePref.getText()));
 
                 return true;
             }
@@ -245,6 +267,9 @@ public class WifiParamFragment extends PreferenceFragmentCompat {
             public boolean onPreferenceChange(Preference preference, Object o) {
                 ((EditTextPreference)preference).setText(o.toString());
                 preference.setSummary(o.toString());
+
+
+
                 new FetchTcpPacketTask(new JsonListener() {
                     @Override
                     public void callback(String s) {
@@ -407,6 +432,11 @@ public class WifiParamFragment extends PreferenceFragmentCompat {
                     srcidPref.setText(obj.getString("CONTENT"));
                     srcidPref.setSummary(srcidPref.getText());
                 }
+                else if(subtarget.equals("DOORCODE")){
+                    EditTextPreference doorcodePref = (EditTextPreference) getPreferenceManager().findPreference("wifi_param_doorcode");
+                    doorcodePref.setText(obj.getString("CONTENT"));
+                    doorcodePref.setSummary(doorcodePref.getText());
+                }
                 else if(subtarget.equals("APSSID")){
                     EditTextPreference apssidPref = (EditTextPreference) getPreferenceManager().findPreference("wifi_param_apssid");
                     apssidPref.setText(obj.getString("CONTENT"));
@@ -549,6 +579,7 @@ public class WifiParamFragment extends PreferenceFragmentCompat {
             mPackets.add(Config.strPacketGet("STATE", "APKEY"));
             mPackets.add(Config.strPacketGet("STATE", "STASSID"));
             mPackets.add(Config.strPacketGet("STATE", "STAKEY"));
+            mPackets.add(Config.strPacketGet("STATE", "DOORCODE"));
         }
 
         @Override

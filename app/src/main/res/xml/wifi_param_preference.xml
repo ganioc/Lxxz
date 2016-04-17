@@ -16,12 +16,22 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_srcid"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_srcid"
             android:maxLines="1"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="@string/wifi_param_srcid_title"
+            android:summary=""/>
+        <EditTextPreference
+            android:capitalize="none"
+            android:defaultValue="@string/wifi_param_doorcode"
+            android:inputType="text"
+            android:key="wifi_param_doorcode"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/wifi_param_doorcode_title"
             android:summary=""/>
 
     </PreferenceCategory>
@@ -29,7 +39,7 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_apssid"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_apssid"
             android:maxLines="1"
             android:selectAllOnFocus="true"
@@ -41,7 +51,7 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_ap_ip"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_ap_ip"
             android:maxLines="1"
             android:selectAllOnFocus="true"
@@ -53,7 +63,7 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_ap_netmask"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_ap_netmask"
             android:maxLines="1"
             android:selectAllOnFocus="true"
@@ -74,7 +84,7 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_ap_security_key"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_ap_security_key"
             android:maxLines="1"
             android:selectAllOnFocus="true"
@@ -87,7 +97,7 @@
     <PreferenceCategory android:title="@string/wifi_param_cat_sta">
         <EditTextPreference android:capitalize="none"
             android:defaultValue="@string/wifi_param_stassid"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_stassid"
             android:maxLines="1"
             android:selectAllOnFocus="true"
@@ -110,7 +120,7 @@
         <EditTextPreference
             android:capitalize="none"
             android:defaultValue="@string/wifi_param_sta_security_key"
-            android:inputType="textCapWords"
+            android:inputType="text"
             android:key="wifi_param_sta_security_key"
             android:maxLines="1"
             android:selectAllOnFocus="true"
